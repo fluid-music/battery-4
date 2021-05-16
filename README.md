@@ -7,6 +7,7 @@ const { Battery4Vst2, battery4Vst2Presets } = require('@fluid-music/battery-4')
 
 const session = new fluid.FluidSession({ bpm: 100 }, [
   { name: 'empty', plugins: [new Battery4Vst2] },
+  // Bundled presets assume you have Kontakt's Factory Library installed
   { name: 'fiasco', plugins: [battery4Vst2Presets.fiasco()] },
   { name: 'fragment', plugins: [battery4Vst2Presets.fragment()] },
   { name: 'hipHop', plugins: [battery4Vst2Presets.hipHop()] },
