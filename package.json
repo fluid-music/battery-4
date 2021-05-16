@@ -1,0 +1,22 @@
+{
+  "name": "@fluid-music/battery-4",
+  "version": "0.0.1",
+  "description": "Native Instruments Battery 4 Plugin Adapter",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen": "node ./gen-battery-4-vst2.js",
+    "prepublishOnly": "npm run gen && tsc"
+  },
+  "keywords": [
+    "fluid-music"
+  ],
+  "author": "Charles Holbrow",
+  "license": "ISC",
+  "peerDependencies": {
+    "fluid-music": "^0.9.4||^1.0.0"
+  },
+  "devDependencies": {
+    "fluid-music": "0.9.6||^1.0.0"
+  }
+}
