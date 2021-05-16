@@ -18,5 +18,9 @@
   },
   "devDependencies": {
     "fluid-music": "0.9.6||^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fluid-music/battery-4.git"
   }
 }
